@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,7 +17,7 @@ public class Leetcode_17 {
      */
     public List<String> letterCombinations(String digits) {
         if(digits == null || digits.length() ==0) {
-            return new ArrayList<>();
+            return new ArrayList<String>();
         }
         Map<String,String> mapping = new HashMap<String, String>();
         mapping.put("2", "a,b,c");
@@ -28,7 +29,7 @@ public class Leetcode_17 {
         mapping.put("8", "t,u,v");
         mapping.put("9", "w,x,y,z");
 
-        List<String> result = new ArrayList<>();
+        List<String> result = new ArrayList<String>();
 
         doLetterCombinations(digits, 0, mapping, result, "");
         return result;
