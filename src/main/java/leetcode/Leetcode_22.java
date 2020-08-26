@@ -1,6 +1,7 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -20,7 +21,6 @@ public class Leetcode_22 {
     }
 
     private void doGenerateParenthesis(List<String> result, String s, int left, int right) {
-        System.out.println(left +"," +right);
         if (right == 0 && left == 0) {
             result.add(s);
             return;
