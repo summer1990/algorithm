@@ -3,7 +3,7 @@ package leetcode;
 /**
  * Created by zhaorunqian on 2020/8/26.
  */
-public class Leetcode_59 {
+public class Leetcode_61 {
     public ListNode rotateRight(ListNode head, int k) {
         if(head == null || k == 0) {
             return head;
