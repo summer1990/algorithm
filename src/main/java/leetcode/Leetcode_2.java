@@ -1,5 +1,7 @@
 package leetcode;
 
+import leetcode.util.ListNode;
+
 /**
  * Created by zhaorunqian on 2020/8/17.
  */
@@ -39,13 +41,5 @@ public class Leetcode_2 {
             index.next = node;
         }
         return head.next;
-    }
-
-    static class ListNode{
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

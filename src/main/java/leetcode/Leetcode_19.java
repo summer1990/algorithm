@@ -1,5 +1,7 @@
 package leetcode;
 
+import leetcode.util.ListNode;
+
 /**
  * Created by zhaorunqian on 2020/8/19.
  */
@@ -25,14 +27,5 @@ public class Leetcode_19 {
 
         behindPoint.next = behindPoint.next.next;
         return head;
-    }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }

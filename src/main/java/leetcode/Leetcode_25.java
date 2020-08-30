@@ -1,5 +1,7 @@
 package leetcode;
 
+import leetcode.util.ListNode;
+
 /**
  * Created by zhaorunqian on 2020/8/20.
  */
@@ -47,14 +49,5 @@ public class Leetcode_25 {
 
         }
         return dumpHead.next;
-    }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
     }
 }
